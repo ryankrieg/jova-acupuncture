@@ -14,7 +14,6 @@
 @jova-grey-darker: rgba(77,78,80,1);
 
 @light-grey: rgba(242,242,242,1);
-@grey: rgba(125,125,125,1);
 @dark-grey-blue: rgba(4,17,23,1);
 @dark-blue: rgba(20,85,113,1);
 
@@ -71,7 +70,7 @@
   #Action_bar{
     font-size: 14px;
     font-family: 'Roboto', Arial, Tahoma, sans-serif;
-    background-color: @jova-blue-darker !important;
+    background-color: @jova-blue-dark !important;
     // set max width of action bar
     .column{
       max-width: 1160px;
@@ -177,6 +176,97 @@
   }
 }
 
+// Main Nav
+#Top_bar{
+  .column{
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+  }
+  .logo{
+    margin: 0;
+  }
+  .menu > li > a,
+  .top_bar_right a{
+    margin: 60px 0;
+    padding: 0;
+    color: @jova-grey;
+    font-weight: 600;
+    span{
+      &:not(.description){
+        padding: 0 30px;
+      }
+    }
+  }
+  .menu > li.hover > a,
+  .menu > li.current-menu-item > a,
+  .menu > li.current_page_item > a{
+    color: @jova-grey;
+  }
+  .menu > li.current-menu-item.hover > a,
+  .menu > li.current_page_item.hover > a{
+    cursor: default;
+  }
+
+  // Book Appointment Button
+  #menu-item-31{
+    a{
+      margin: 59px 0;
+      span{
+        padding: 0 36px !important;
+        color: @jova-grey;
+        background-color: @white-gold;
+        -moz-border: 1px solid @gold;
+        -webkit-border: 1px solid @gold;
+        border: 1px solid @gold;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+      }
+      &:hover{
+        span{
+          .transition-all;
+          color: @jova-grey-darker;
+          background-color: darken(@white-gold, 1%);
+          border-color: darken(@gold, 10%);
+        }
+      }
+    }
+  }
+
+  // subMenu (dropdown)
+  .menu > li ul{
+    background-color: @white;
+    li{
+      &.hover{
+        a{
+          color: @jova-grey-darker;
+          background: @light-grey;
+        }
+      }
+      a{
+        color: @jova-grey;
+        &:hover{
+          color: @jova-grey-darker;
+          background: @light-grey;
+        }
+      }
+    }
+  }
+  .menu li ul{
+    background-image: none;
+    li{
+      width: 360px;
+      &.hover{
+        background: @light-grey;
+      }
+      a{
+        border-bottom: 1px solid @light-grey;
+      }
+    }
+  }
+}
+
 
 //
 //
@@ -186,10 +276,12 @@
 //
 //
 @media only screen and (min-width: 768px){
+
   // Show Address (slogan)
   #Action_bar .contact_details li.slogan{
     display: inline-block;
   }
+
 }
 
 
@@ -212,6 +304,25 @@
           margin-right: 30px;
         }
       }
+    }
+  }
+
+  // Underline on menu
+  .menu-line-below #Top_bar .menu > li > a:after{
+    bottom: auto;
+    width: 90%;
+    width: ~"calc(100% - 40px)";
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  // Book Appointment Button
+  #menu-item-31{
+    margin-left: 30px !important;
+    //hide underline
+     a:after{
+      display: none !important;
     }
   }
 
@@ -239,7 +350,13 @@
 //
 @media only screen and (max-width: 767px){
 
+  // Less space on left & right sides
+  .section_wrapper, .section:not(.full-width) > .section_wrapper, .container, .four.columns .widget-area{
+    max-width: 90%;
+    max-width: ~"calc(100% - 24px)" !important;
+  }
 
+  // Action Bar = address, phone, email, socials
   #Action_bar{
     .contact_details{
       padding: 24px 0 0 0;
@@ -257,4 +374,28 @@
     }
   }
 
+  // Main Nav
+  #Top_bar{
+    .top_bar_left{
+      margin-top: 0;
+    }
+    .logo{
+      margin: 0;
+      #logo{
+        margin: 12px 0;
+        img{
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
+  // Hide Menu Toggle
+  .responsive-menu-toggle{
+    display: none !important
+  }
+  // Show Menu (always instead of on toggle)
+  #menu{
+    display: block !important;
+  }
 }
