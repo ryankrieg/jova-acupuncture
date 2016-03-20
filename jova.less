@@ -216,9 +216,9 @@
         padding: 0 36px !important;
         color: @jova-grey;
         background-color: @white-gold;
-        -moz-border: 1px solid @gold;
-        -webkit-border: 1px solid @gold;
-        border: 1px solid @gold;
+        -moz-border: 1px solid @gold !important;
+        -webkit-border: 1px solid @gold !important;
+        border: 1px solid @gold !important;
         -moz-border-radius: 30px;
         -webkit-border-radius: 30px;
         border-radius: 30px;
@@ -228,7 +228,7 @@
           .transition-all;
           color: @jova-grey-darker;
           background-color: darken(@white-gold, 1%);
-          border-color: darken(@gold, 10%);
+          border-color: darken(@gold, 10%) !important;
         }
       }
     }
@@ -265,8 +265,25 @@
       }
     }
   }
-}
+  // sticky nav
+  &.is-sticky{
+    .menu_wrapper .menu > li > a{
+      padding: 0;
+    }
+    .menu > li > a,
+    .top_bar_right a{
+      margin: 15px 0;
+    }
 
+    #menu-item-31 a{
+      margin: 9px 0;
+      span{
+        line-height: 40px;
+      }
+    }
+  }
+
+}
 
 //
 //
