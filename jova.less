@@ -386,7 +386,7 @@
     .logo{
       margin: 0;
       #logo{
-        margin: 12px 0;
+        margin: 24px 0;
         img{
           width: 100% !important;
           height: auto !important;
@@ -405,6 +405,7 @@
   // Menu Styles
   #Top_bar{
     #menu{
+      padding-bottom: 24px;
       ul li{
         background-color: @light-grey;
         text-align: center;
@@ -483,4 +484,21 @@
       }
     }
   }
+
+  // Book Appointment Button
+  #Top_bar #menu-item-31{
+    margin-top: 20px !important;
+    background-color: transparent !important;
+    a{
+      display: block !important;
+      span{
+        padding: 16px 36px !important;
+        line-height: 60px !important;
+        -moz-border: 1px solid @gold !important;
+        -webkit-border: 1px solid @gold !important;
+        border: 1px solid @gold !important;
+      }
+    }
+  }
+
 }
