@@ -1,13 +1,181 @@
 // JOVA ACUPUNCTURE - CUSTOM LESS FILE
 
-// Current Header Style (Be Themes)
-.header-classic, .header-stack{
 
+//
+//
+// VARIABLES
+
+// Colors
+@jova-blue: rgba(41,170,226,1);
+@jova-blue-dark: rgba(39,161,214,1);
+@jova-blue-darker: rgba(33,136,181,1);
+
+@jova-grey: rgba(88,89,91,1);
+@jova-grey-darker: rgba(77,78,80,1);
+
+@light-grey: rgba(242,242,242,1);
+@grey: rgba(125,125,125,1);
+@dark-grey-blue: rgba(4,17,23,1);
+@dark-blue: rgba(20,85,113,1);
+
+@gold: rgba(248,184,66,1);
+@white-gold: rgba(255,252,246,1);
+
+@white: rgba(255,255,255,1);
+@black: rgba(0,0,0,1);
+
+
+//
+//
+// MIXINS
+
+// styles required for fontawesome icons
+.fontawesome{
+  display: inline-block;
+
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: inherit;
+  width: inherit;
+  height: inherit;
+  font-size: 1em;
+  text-align: center;
+  text-rendering: optimizelegibility;
+}
+
+// transition all
+.transition-all{
+  transition: all .3s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+}
+
+
+//
+//
+// STYLES
+
+// Current Header Style (Be Themes)
+.header-classic,
+.header-stack{
   // Action Bar = address, phone, email, socials
   #Action_bar{
-    background-color: #29aae2;
+    font-size: 14px;
+    font-family: 'Roboto', Arial, Tahoma, sans-serif;
+    background-color: @jova-blue-darker !important;
+    // set max width of action bar
+    .column{
+      max-width: 1160px;
+      margin: 0 auto;
+      float: none;
+    }
+    .contact_details{
+      li{
+        margin-right: 30px;
+        padding: 10px 0;
+        color: white !important;
+        a,
+        a:visited{
+          color: @white;
+          font-weight: 500;
+          .transition-all;
+        }
+        a:hover,
+        a:active{
+          color: rgba(255,255,255,0.85);
+          text-decoration: none;
+        }
+        // add map icon to address
+        &.slogan{
+          font-weight: 500;
+          &:before{
+            .fontawesome;
+            content: '\f041';
+            margin: 0 .3em 0 0;
+          }
+        }
+        //change phone icon
+        &.phone{
+          .icon-phone{
+            display: none;
+          }
+          a{
+            &:before{
+              .fontawesome;
+              content: '\f095';
+              margin: 0 .3em 0 0;
+            }
+          }
+        }
+        //change email icon
+        &.mail{
+          .icon-mail-line{
+            display: none;
+          }
+          a{
+            &:before{
+              .fontawesome;
+              content: '\f0e0';
+              margin: 0 .3em 0 0;
+            }
+          }
+        }
+      }
+    }
+    .social{
+      padding: 10px 0;
+      li{
+        margin-right: 0px;
+        margin-right: 5px;
+        a,
+        a:visited{
+          padding: 0 5px;
+          color: @white;
+          font-size: 16px;
+        }
+        a:hover,
+        a:active{
+          color: rgba(255,255,255,0.8);
+        }
+        //change Facebook icon
+        &.facebook{
+          .icon-facebook{
+            &:before{
+              .fontawesome;
+              content: '\f082';
+            }
+          }
+        }
+        //change LinkedIn icon
+        &.linkedin{
+          .icon-linkedin{
+            &:before{
+              .fontawesome;
+              content: '\f08c';
+            }
+          }
+        }
+        //change Instagram icon
+        &.instagram{
+          .icon-instagram{
+            &:before{
+              .fontawesome;
+              content: '\f16d';
+            }
+          }
+        }
+      }
+    }
   }
-
 }
 
 //
@@ -18,8 +186,8 @@
 //
 //
 @media only screen and (max-width: 767px){
-  // Action Bar = address, phone, email, socials
-  #Action_bar{
-    background-color: #29aae2;
+  // Show Address (slogan)
+  #Action_bar .contact_details li.slogan{
+    display: inline-block;
   }
 }
