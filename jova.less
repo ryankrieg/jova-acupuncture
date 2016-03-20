@@ -80,7 +80,6 @@
     }
     .contact_details{
       li{
-        margin-right: 30px;
         padding: 10px 0;
         color: white !important;
         a,
@@ -203,6 +202,19 @@
 //
 @media only screen and (min-width: 1024px){
 
+  // Current Header Style (Be Themes)
+  .header-classic,
+  .header-stack{
+    // Action Bar = address, phone, email, socials
+    #Action_bar{
+      .contact_details{
+        li{
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -226,8 +238,23 @@
 //
 //
 @media only screen and (max-width: 767px){
-  // Show Address (slogan)
-  #Action_bar .contact_details li.slogan{
-    display: inline-block;
+
+
+  #Action_bar{
+    .contact_details{
+      padding: 24px 0 0 0;
+      line-height: 18px;
+      // Show Address (slogan)
+      li{
+        margin: 0 0 12px 0;
+        &.slogan{
+          display: inline-block;
+        }
+      }
+    }
+    .social{
+      margin-bottom: 18px;
+    }
   }
+
 }
