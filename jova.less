@@ -6,22 +6,22 @@
 // VARIABLES
 
 // Colors
-@jova-blue: rgba(41,170,226,1);
-@jova-blue-dark: rgba(39,161,214,1);
-@jova-blue-darker: rgba(33,136,181,1);
+@jova-blue: rgba(41,170,226,1); //#29aae2
+@jova-blue-dark: rgba(39,161,214,1); //#27a1d6
+@jova-blue-darker: rgba(33,136,181,1); //#2188b5
 
-@jova-grey: rgba(88,89,91,1);
-@jova-grey-darker: rgba(77,78,80,1);
+@jova-grey: rgba(88,89,91,1); //#58595b
+@jova-grey-darker: rgba(77,78,80,1); //#4d4e50
 
-@light-grey: rgba(242,242,242,1);
-@dark-grey-blue: rgba(4,17,23,1);
-@dark-blue: rgba(20,85,113,1);
+@light-grey: rgba(242,242,242,1); //#f2f2f2
+@dark-grey-blue: rgba(4,17,23,1); //#041117
+@dark-blue: rgba(20,85,113,1); //#145571
 
-@gold: rgba(248,184,66,1);
-@white-gold: rgba(255,252,246,1);
+@gold: rgba(248,184,66,1); //#f8b842
+@white-gold: rgba(255,252,246,1); //#fffcf6
 
-@white: rgba(255,255,255,1);
-@black: rgba(0,0,0,1);
+@white: rgba(255,255,255,1); //#ffffff
+@black: rgba(0,0,0,1); //#000000
 
 
 //
@@ -63,7 +63,8 @@
 //
 // STYLES
 
-// Current Header Style (Be Themes)
+// Header
+//
 .header-classic,
 .header-stack{
   // Action Bar = address, phone, email, socials
@@ -282,8 +283,108 @@
       }
     }
   }
-
 }
+
+
+// Footer
+//
+#Footer{
+  background-color: @white;
+  font-size: 16px;
+  line-height: 22px;
+  // wraps entire footer
+  .widgets_wrapper{
+    padding: 0 0 45px 0;
+    background-image: url('/wp-content/uploads/paper-texture.jpg');
+    background-position: 0 0;
+    background-repeat: repeat;
+    .container{
+      //max-width: 1200px;
+    }
+  }
+  // 1st column
+  .column.one-fourth:first-child{
+    margin: 0;
+    .widgets_wrapper{
+      .widget{
+        padding: 0;
+      }
+    }
+    .jova-mission-statement{
+      margin: 0 -30vw;
+      padding: 50px 0;
+      background-color: @dark-grey-blue;
+      background-image: url('/wp-content/uploads/blue-diagonal-striped-texture.jpg');
+      background-position: 0 0;
+      background-repeat: repeat;
+      .jova-container{
+        max-width: 760px;
+        margin: 0 auto;
+      }
+      h3{
+
+      }
+    }
+    .jova-cta{
+      margin: 0 -30vw 0 -30vw;
+      padding: 40px 0;
+      background-color: @white-gold;
+      background-image: url('/wp-content/uploads/gold-diagonal-striped-texture.jpg');
+      background-position: 0 0;
+      background-repeat: repeat;
+      .jova-container{
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      h3{
+
+      }
+      a,
+      a:visited{
+        span{
+
+        }
+      }
+      a:hover,
+      a:active{
+
+      }
+    }
+    .jova-divider{
+      height: 10px;
+      margin: 0 -30vw 35px -30vw;
+      background-color: @dark-grey-blue;
+      background-image: url('/wp-content/uploads/blue-diagonal-striped-texture.jpg');
+      background-position: 0 0;
+      background-repeat: repeat;
+    }
+  }
+  // copyright bar
+  .footer_copy{
+    background-color: @jova-blue-dark;
+    border-top: none;
+    color: @light-grey;
+    font-size: 13px;
+    font-weight: 500;
+    .one{
+      min-height: 30px;
+      margin-bottom: 0 !important;
+      padding-top: 0;
+    }
+    .copyright{
+      margin: 0 !important;
+      line-height: 30px;
+    }
+  }
+}
+// hide socials in copyright bar
+.footer-copy-center #Footer .footer_copy .social{
+  display: none !important;
+}
+
+
+
+
 
 //
 //
@@ -299,6 +400,21 @@
     display: inline-block;
   }
 
+  // Footer
+  //
+  #Footer{
+    .column.one-fourth{
+      // first column is the missions statement and CTA that will be 100% width
+      &:first-child{
+        width: 100%;
+      }
+      // second column needs to get reset to half width
+      &:nth-child(2){
+        width: 48%;
+        margin: 0 1%;
+      }
+    }
+  }
 }
 
 
