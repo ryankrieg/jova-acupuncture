@@ -88,6 +88,7 @@ a:active{
       float: none;
     }
     .contact_details{
+      padding-left: 6px;
       li{
         padding: 10px 0;
         color: white !important;
@@ -142,7 +143,9 @@ a:active{
       padding: 10px 0;
       li{
         margin-right: 0px;
-        margin-right: 5px;
+        &:last-child{
+          margin-right: 0;
+        }
         a,
         a:visited{
           padding: 0 5px;
@@ -547,6 +550,15 @@ a:active{
       .contact_details{
         li{
           margin-right: 30px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+      .social{
+        padding: 10px 0;
+        li{
+          margin-right: 0px;
         }
       }
     }
