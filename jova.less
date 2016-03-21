@@ -400,7 +400,7 @@ a:active{
       width: 28%;
       margin: 0 1%;
       img{
-        width: 90%;
+        width: 100%;
       }
     }
   }
@@ -544,6 +544,25 @@ a:active{
       }
     }
   }
+
+  //Footer
+  #Footer{
+    .column.one-fourth{
+      &:nth-child(2){
+        img{
+          width: 90%;
+        }
+      }
+    }
+    .jova-contact-info{
+      text-align: center;
+    }
+    .jova-hours{
+      text-align: center;
+    }
+  }
+
+
 }
 
 //
@@ -865,6 +884,37 @@ a:active{
         -webkit-border: 1px solid @gold !important;
         border: 1px solid @gold !important;
       }
+    }
+  }
+
+  // Footer
+  #Footer{
+    // 1st column
+    .column.one-fourth:first-child{
+      .jova-mission-statement{
+        .jova-mission-statement-container{
+          width: ~"calc( 100vw - 48px )";
+        }
+      }
+      .jova-cta{
+        .jova-cta-container{
+          width: ~"calc( 100vw - 48px )";
+        }
+        a,
+        a:visited{
+          font-size: 22px;
+          span{
+            padding: 0 24px !important;
+          }
+        }
+      }
+    }
+    .jova-contact-info{
+      margin: 24px auto;
+      text-align: center;
+    }
+    .jova-hours{
+      text-align: center;
     }
   }
 
