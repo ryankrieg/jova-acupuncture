@@ -61,6 +61,15 @@
 
 //
 //
+// GLOBALS
+a:hover,
+a:active{
+  text-decoration: none !important;
+}
+
+
+//
+//
 // STYLES
 
 // Header
@@ -91,7 +100,6 @@
         a:hover,
         a:active{
           color: rgba(255,255,255,0.85);
-          text-decoration: none;
         }
         // add map icon to address
         &.slogan{
@@ -292,6 +300,7 @@
 //
 #Footer{
   background-color: @white;
+  color: @jova-grey;
   font-size: 16px;
   line-height: 22px;
   // wraps entire footer
@@ -300,9 +309,6 @@
     background-image: url('/wp-content/uploads/paper-texture.jpg');
     background-position: 0 0;
     background-repeat: repeat;
-    .container{
-      //max-width: 1200px;
-    }
   }
   // 1st column
   .column.one-fourth:first-child{
@@ -317,7 +323,7 @@
       background-image: url('/wp-content/uploads/blue-diagonal-striped-texture.jpg');
       background-position: 0 0;
       background-repeat: repeat;
-      .jova-container{
+      .jova-mission-statement-container{
         max-width: 780px;
         margin: 0 auto;
       }
@@ -336,7 +342,7 @@
       background-position: 0 0;
       background-repeat: repeat;
       text-align: center;
-      .jova-container{
+      .jova-cta-container{
         margin: 0 auto;
       }
       h3{
@@ -365,7 +371,6 @@
         }
         &:hover,
         &:active{
-          text-decoration: none;
           span{
             .transition-all;
             color: @white;
@@ -374,19 +379,84 @@
         }
       }
     }
-    .jova-divider{
-      height: 10px;
-      margin: 0 -30vw 35px -30vw;
-      background-color: @dark-grey-blue;
-      background-image: url('/wp-content/uploads/blue-diagonal-striped-texture.jpg');
-      background-position: 0 0;
-      background-repeat: repeat;
+  }
+  .jova-divider{
+    height: 10px;
+    margin: 0 -30vw 35px -30vw;
+    background-color: @dark-grey-blue;
+    background-image: url('/wp-content/uploads/blue-diagonal-striped-texture.jpg');
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+  .jova-contact-info{
+    h4{
+      margin: 0 0 24px 0;
+      color: @dark-grey-blue;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
     }
-    .jova-contact-info{
-
+    a,
+    a:visited{
+      .transition-all;
+      margin: 0 8px 0 0;
+      padding: 1px;
+      font-size: 24px;
+      opacity: 1;
+      &.jova-facebook{
+        &:before{
+          .fontawesome;
+          content: '\f082';
+          color: #3b5999;
+        }
+      }
+      &.jova-linkedin{
+        &:before{
+          .fontawesome;
+          content: '\f08c';
+          color: #006699;
+        }
+      }
+      &.jova-instagram{
+        &:before{
+          .fontawesome;
+          content: '\f16d';
+          color: #3f729b;
+        }
+      }
     }
-    .jova-hours{
-
+    a:hover,
+    a:active{
+      opacity: 0.8;
+    }
+    p{
+      margin: 0 0 12px 0;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+  .jova-hours{
+    .jova-hours-container{
+      display: inline-block;
+      padding: 18px 20px;
+      background-color: white;
+    }
+    h4{
+      margin: 0 0 12px 0;
+      color: @jova-grey;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    p{
+      margin: 0 0 12px 0;
+      strong{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &:last-child{
+        margin: 0;
+      }
     }
   }
   // copyright bar
