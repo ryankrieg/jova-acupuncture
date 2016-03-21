@@ -190,13 +190,14 @@ a:active{
 
 // Main Nav
 #Top_bar{
+  .menu_wrapper{
+    float: right;
+    margin-right: 20px;
+  }
   .column{
     max-width: 1200px;
     margin: 0 auto;
     float: none;
-  }
-  .logo{
-    margin: 0;
   }
   .menu > li > a,
   .top_bar_right a{
@@ -206,7 +207,7 @@ a:active{
     font-weight: 600;
     span{
       &:not(.description){
-        padding: 0 30px;
+        padding: 0 12px;
       }
     }
   }
@@ -222,11 +223,12 @@ a:active{
 
   // Book Appointment Button
   #menu-item-31{
+    margin-left: 12px;
     a,
     a:visited{
       margin: 59px 0;
       span{
-        padding: 0 36px !important;
+        padding: 0 20px !important;
         color: @jova-grey;
         background-color: @white-gold;
         -moz-border: 1px solid @gold !important;
@@ -531,6 +533,17 @@ a:active{
   #Action_bar .contact_details li.slogan{
     display: inline-block;
   }
+
+  // Main Nav
+  #Top_bar{
+    .logo{
+      margin: 0 0 0 20px;
+      img{
+        width: 190px !important;
+        height: 65px !important;
+      }
+    }
+  }
 }
 
 //
@@ -559,6 +572,34 @@ a:active{
         padding: 10px 0;
         li{
           margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  // Main Nav
+  #Top_bar{
+    .logo{
+      img{
+        width: 260px !important;
+        height: 89px !important;
+      }
+    }
+    .menu > li > a,
+    .top_bar_right a{
+      span{
+        &:not(.description){
+          padding: 0 30px;
+        }
+      }
+    }
+    // Book Appointment Button
+    #menu-item-31{
+      margin-left: 30px;
+      a,
+      a:visited{
+        span{
+          padding: 0 36px !important;
         }
       }
     }
@@ -637,6 +678,20 @@ a:active{
 //
 @media only screen and (min-width: 1240px){
 
+  // Main Nav
+  #Top_bar{
+    .logo{
+      margin: 0;
+      img{
+        width: 320px !important;
+        height: 110px !important;
+      }
+    }
+    .menu_wrapper{
+      margin: 0;
+    }
+  }
+
   // Footer
   #Footer{
     // 2nd column - Logo
@@ -700,7 +755,7 @@ a:active{
       #logo{
         margin: 24px 0;
         img{
-          width: 100% !important;
+          //width: 100% !important;
           height: auto !important;
         }
       }
