@@ -211,7 +211,8 @@
 
   // Book Appointment Button
   #menu-item-31{
-    a{
+    a,
+    a:visited{
       margin: 59px 0;
       span{
         padding: 0 36px !important;
@@ -224,7 +225,8 @@
         -webkit-border-radius: 30px;
         border-radius: 30px;
       }
-      &:hover{
+      &:hover,
+      &:active{
         span{
           .transition-all;
           color: @jova-grey-darker;
@@ -305,10 +307,8 @@
   // 1st column
   .column.one-fourth:first-child{
     margin: 0;
-    .widgets_wrapper{
-      .widget{
-        padding: 0;
-      }
+    .widget{
+      padding: 0 !important;
     }
     .jova-mission-statement{
       margin: 0 -30vw;
@@ -318,11 +318,14 @@
       background-position: 0 0;
       background-repeat: repeat;
       .jova-container{
-        max-width: 760px;
+        max-width: 780px;
         margin: 0 auto;
       }
       h3{
-
+        margin: 0;
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
       }
     }
     .jova-cta{
@@ -332,22 +335,43 @@
       background-image: url('/wp-content/uploads/gold-diagonal-striped-texture.jpg');
       background-position: 0 0;
       background-repeat: repeat;
+      text-align: center;
       .jova-container{
-        max-width: 900px;
         margin: 0 auto;
       }
       h3{
-
+        display: inline-block;
+        margin: 0;
+        color: @dark-blue;
+        font-family: "Lora", Arial, Tahoma, sans-serif;
+        font-size: 36px;
+        line-height: 60px;
       }
       a,
       a:visited{
+        display: inline-block;
+        font-family: 'Raleway', Arial, Tahoma, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
         span{
-
+          display: block;
+          padding: 0 50px !important;
+          color: @white;
+          line-height: 60px;
+          background-color: @gold;
+          -moz-border-radius: 30px;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
         }
-      }
-      a:hover,
-      a:active{
-
+        &:hover,
+        &:active{
+          text-decoration: none;
+          span{
+            .transition-all;
+            color: @white;
+            background-color: darken(@gold, 5%);
+          }
+        }
       }
     }
     .jova-divider{
@@ -407,6 +431,11 @@
       // first column is the missions statement and CTA that will be 100% width
       &:first-child{
         width: 100%;
+        .jova-cta{
+          h3{
+            margin: 0 60px 0 0;
+          }
+        }
       }
       // second column needs to get reset to half width
       &:nth-child(2){
@@ -416,7 +445,6 @@
     }
   }
 }
-
 
 //
 //
