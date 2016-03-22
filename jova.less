@@ -666,6 +666,43 @@ p{
   }
 }
 
+// Services
+.services{
+  .vc_column-inner{
+    height: ~"calc( 100vw / 4 )";
+    padding: 0 !important;
+    a,
+    a:visited{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+    a:hover,
+    a:active{
+      background: rgba(0,0,0,0.1);
+    }
+    h3{
+      color: white;
+      i.icon-right-circled{
+        float: right;
+        height: 60px;
+        &:before{
+          .fontawesome;
+          content: '\f0a9';
+          font-size: 60px;
+        }
+      }
+    }
+    p{
+      font-size: 0;
+      text-indent: -1000px;
+      color: rgba(0,0,0,0);
+    }
+  }
+}
 
 
 //
