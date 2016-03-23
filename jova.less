@@ -669,7 +669,9 @@ p{
 // Services
 .services{
   .vc_column-inner{
+    height: 320px;
     height: ~"calc( 100vw / 4 )";
+    max-height: 400px;
     padding: 0 !important;
     a,
     a:visited{
@@ -682,12 +684,15 @@ p{
     }
     a:hover,
     a:active{
-      background: rgba(0,0,0,0.1);
+      background: rgba(0,0,0,0.25);
     }
     h3{
+      pointer-events: none;
+      position: relative;
       color: white;
       i.icon-right-circled{
-        float: right;
+        display: inline-block;
+        vertical-align: middle;
         height: 60px;
         &:before{
           .fontawesome;
