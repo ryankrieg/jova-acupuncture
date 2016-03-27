@@ -121,7 +121,6 @@ h6{
 }
 p{
   color: @jova-grey;
-  line-height: 28px;
   a,
   a:visited{
     color: @jova-blue;
@@ -613,7 +612,6 @@ p{
 // About
 .about-jova{
   .vc_column-inner{
-    padding: 100px 24px !important;
     .wpb_wrapper{
       max-width: 600px;
       margin: 0 auto;
@@ -623,28 +621,19 @@ p{
   p{
     color: @white;
   }
-  h3{
-    margin-bottom: 24px;
-  }
-  p{
-    font-size: 24px;
-    line-height: 36px;
-  }
 }
 .about-james{
   .vc_column-inner{
-    padding: 100px 24px !important;
     .wpb_wrapper{
       max-width: 500px;
       margin: 0 auto;
     }
   }
   .james-headshot{
-    float: left;
-    margin: -16px 20px 20px 0;
+    margin-bottom: 20px;
   }
   h3{
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
   h4{
     font-size: 22px;
@@ -652,23 +641,22 @@ p{
     line-height: 26px;
   }
   .more-about-jova{
-    float: right;
     margin-top: 30px;
     p{
       a{
         font-family: @raleway;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 30px;
       }
     }
     i.icon-right-circled{
       float: right;
-      height: 40px;
+      height: 30px;
       &:before{
         .fontawesome;
         content: '\f0a9';
-        font-size: 40px;
+        font-size: 30px;
       }
     }
   }
@@ -677,9 +665,7 @@ p{
 // Services
 .services{
   .vc_column-inner{
-    height: 320px;
-    height: ~"calc( 100vw / 4 )";
-    max-height: 400px;
+    height: 200px;
     padding: 0 !important;
     a,
     a:visited{
@@ -719,6 +705,9 @@ p{
 }
 
 // Sub-page Icon Blocks
+.sub-page-blocks{
+
+}
 .style-simple .icon_box .subpage-links{
   .desc_wrapper h4{
     margin-bottom: 12px;
@@ -739,14 +728,16 @@ p{
 // Location Block (HOME)
 .homepage-location{
   .jova-office{
+    min-height: 400px;
     .vc_column-inner{
       background-position: top right !important;
     }
   }
   .jova-contact-box{
     position: absolute;
-    top: 120px;
-    right: 120px;
+    top: -84px;
+    right: 12px;
+    left: 12px;
     padding: 18px 20px;
     background-color: @white;
     h4{
@@ -795,6 +786,10 @@ p{
 //
 @media only screen and (min-width: 768px){
 
+  p{
+    line-height: 28px;
+  }
+
   // Show Address (slogan)
   #Action_bar .contact_details li.slogan{
     display: inline-block;
@@ -833,12 +828,71 @@ p{
     padding: 130px 0;
     h2{
       margin: 0 auto 20px auto;
-      font-size: 36px;
+      font-size: 35px;
       line-height: 50px;
       strong{
         font-size: 50px;
         line-height: 80px;
       }
+    }
+  }
+
+  .about-jova{
+    .vc_column-inner{
+      padding: 100px 24px !important;
+    }
+    h3{
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  .about-james{
+    .vc_column-inner{
+      padding: 100px 24px !important;
+    }
+    .james-headshot{
+      float: left;
+      margin: -16px 20px 20px 0;
+    }
+    h3{
+      margin-bottom: 8px;
+    }
+    .more-about-jova{
+      float: right;
+      p{
+        a{
+          font-size: 24px;
+          line-height: 40px;
+        }
+      }
+      i.icon-right-circled{
+        height: 40px;
+        &:before{
+          .fontawesome;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  // Services
+  .services{
+    .vc_column-inner{
+      height: 320px;
+      height: ~"calc( 100vw / 4 )";
+      max-height: 400px;
+    }
+  }
+
+  // Location Block (HOME)
+  .homepage-location{
+    .jova-contact-box{
+      top: 200px;
+      right: auto;
+      left: 30px;
     }
   }
 
@@ -922,6 +976,15 @@ p{
     }
   }
 
+  // Location Block (HOME)
+  .homepage-location{
+    .jova-contact-box{
+      top: 120px;
+      right: 10px;
+      left: auto;
+    }
+  }
+
   // Footer
   #Footer{
     // 1st column
@@ -990,6 +1053,13 @@ p{
     }
   }
 
+  // Location Block (HOME)
+  .homepage-location{
+    .jova-contact-box{
+      right: 80px;
+    }
+  }
+
   // Footer
   #Footer{
     // 2nd column - Logo
@@ -1014,6 +1084,11 @@ p{
 //
 //
 @media only screen and (max-width: 767px){
+
+  h3{
+    font-size: 24px;
+    line-height: 28px;
+  }
 
   // Less space on left & right sides
   .section_wrapper,
@@ -1166,6 +1241,39 @@ p{
     }
   }
 
+  .about-jova{
+    .vc_column-inner{
+      padding-bottom: 35px;
+    }
+    h3,
+    p{
+      text-align: center;
+    }
+  }
+  .about-james{
+    .james-headshot{
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+    h4{
+      margin-bottom: 15px !important;
+      text-align: center;
+    }
+    p{
+      text-align: center;
+    }
+    .more-about-jova{
+      margin-bottom: 35px;
+    }
+  }
+  // Sub-page Icon Blocks
+  .sub-page-blocks.vc_custom_1459062379240{
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
   // Footer
   #Footer{
     // 1st column
@@ -1173,6 +1281,10 @@ p{
       .jova-mission-statement{
         .jova-mission-statement-container{
           width: ~"calc( 100vw - 48px )";
+          h3{
+            font-size: 26px;
+            line-height: 36px;
+          }
         }
       }
       .jova-cta{
@@ -1185,6 +1297,9 @@ p{
           span{
             padding: 0 24px !important;
           }
+        }
+        h3{
+          line-height: 50px;
         }
       }
     }
