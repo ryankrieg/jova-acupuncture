@@ -99,38 +99,37 @@ body:not(.template-slider) #Header{
 }
 
 // Fonts
-#content{
-  h3,
-  h4,
-  h5,
-  h6{
-    font-weight: 600;
-  }
+h3,
+h4,
+h5,
+h6{
+  font-weight: 600;
+}
 
-  h3{
+h3{
 
-  }
-  h4{
+}
+h4{
 
-  }
-  h5{
+}
+h5{
 
-  }
-  h6{
+}
+h6{
 
+}
+p{
+  line-height: 28px;
+  a,
+  a:visited{
+    color: @jova-blue;
   }
-  p{
-    line-height: 28px;
-    a,
-    a:visited{
-      color: @jova-blue;
-    }
-    a:hover,
-    a:active{
-      color: @jova-blue-darker;
-    }
+  a:hover,
+  a:active{
+    color: @jova-blue-darker;
   }
 }
+
 
 // // //
 
@@ -402,6 +401,7 @@ body:not(.template-slider) #Header{
       h3{
         margin: 0;
         font-size: 30px;
+        font-weight: 300;
         line-height: 42px;
         text-align: center;
       }
@@ -422,6 +422,7 @@ body:not(.template-slider) #Header{
         color: @dark-blue;
         font-family: @lora;
         font-size: 36px;
+        font-weight: 300;
         line-height: 60px;
       }
       a,
@@ -732,6 +733,49 @@ body:not(.template-slider) #Header{
   font-size: 16px;
   line-height: 24px;
 }
+
+// Location Block (HOME)
+.homepage-location{
+  .jova-office{
+    .vc_column-inner{
+      background-position: top right !important;
+    }
+  }
+  .jova-contact-box{
+    position: absolute;
+    top: 120px;
+    right: 120px;
+    padding: 20px;
+    background-color: @white;
+    h4{
+      margin-bottom: 10px;
+    }
+    p{
+
+    }
+    a,
+    a:visited{
+      font-family: @raleway;
+      font-weight: 700;
+      line-height: 24px;
+      i.icon-right-circled{
+        display: inline-block;
+        vertical-align: middle;
+        height: 24px;
+        &:before{
+          .fontawesome;
+          content: '\f0a9';
+          font-size: 24px;
+        }
+      }
+    }
+    a:hover,
+    a:active{
+
+    }
+  }
+}
+
 
 
 
