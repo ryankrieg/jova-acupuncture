@@ -99,34 +99,36 @@ body:not(.template-slider) #Header{
 }
 
 // Fonts
-h3,
-h4,
-h5,
-h6{
-  font-weight: 600;
-}
-
-h3{
-
-}
-h4{
-
-}
-h5{
-
-}
-h6{
-
-}
-p{
-  line-height: 28px;
-  a,
-  a:visited{
-    color: @jova-blue;
+#content{
+  h3,
+  h4,
+  h5,
+  h6{
+    font-weight: 600;
   }
-  a:hover,
-  a:active{
-    color: @jova-blue-darker;
+
+  h3{
+
+  }
+  h4{
+
+  }
+  h5{
+
+  }
+  h6{
+
+  }
+  p{
+    line-height: 28px;
+    a,
+    a:visited{
+      color: @jova-blue;
+    }
+    a:hover,
+    a:active{
+      color: @jova-blue-darker;
+    }
   }
 }
 
@@ -425,6 +427,7 @@ p{
       a,
       a:visited{
         display: inline-block;
+        font-family: @raleway;
         font-size: 24px;
         font-weight: 600;
         span{
@@ -476,6 +479,7 @@ p{
   }
   .jova-contact-info{
     max-width: 280px;
+    text-align: center;
     h4{
       margin: 0 0 24px 0;
       color: @dark-grey-blue;
@@ -532,6 +536,7 @@ p{
   }
   .jova-hours{
     margin-top: -16px;
+    text-align: center;
     .jova-hours-container{
       display: inline-block;
       min-width: 170px;
@@ -687,6 +692,7 @@ p{
       background: rgba(0,0,0,0.25);
     }
     h3{
+      padding: 10px;
       pointer-events: none;
       position: relative;
       color: white;
@@ -708,6 +714,25 @@ p{
     }
   }
 }
+
+// Sub-page Icon Blocks
+.style-simple .icon_box .subpage-links{
+  .desc_wrapper h4{
+    margin-bottom: 12px;
+    color: @dark-grey-blue;
+    font-weight: 600;
+  }
+  .image_wrapper{
+    margin-bottom: 10px;
+    padding-top: 0;
+  }
+}
+.icon_box a.subpage-links .desc{
+  color: @jova-grey;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 
 
 //
@@ -745,10 +770,10 @@ p{
       }
     }
     .jova-contact-info{
-      text-align: center;
+      text-align: left;
     }
     .jova-hours{
-      text-align: center;
+      text-align: left;
     }
   }
 
