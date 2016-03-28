@@ -75,6 +75,10 @@ a:active{
   text-decoration: none !important;
 }
 
+*:focus{
+  outline: none !important;
+}
+
 // Reset weird min header height
 body:not(.template-slider) #Header{
   min-height: auto;
@@ -997,6 +1001,14 @@ p{
         margin: 0;
         text-align: center;
       }
+      input, textarea{
+        color: @jova-grey;
+        &:focus{
+          color: @jova-grey-darker;
+          border-color: @white !important;
+          background-color: @white !important;
+        }
+      }
       input[type="submit"]{
         margin: 0;
         padding: 16px 80px;
@@ -1011,6 +1023,10 @@ p{
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
         border-radius: 30px;
+        &:hover,
+        &:active{
+          background-color: darken(@dark-blue, 5%) !important;
+        }
       }
       .ajax-loader{
         display: block;
