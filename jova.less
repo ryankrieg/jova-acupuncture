@@ -983,19 +983,9 @@ p{
   .faq{
     .question{
       background: @light-grey !important;
+      border: none !important;
       &:after{
         display: none !important;
-      }
-      .title{
-        .transition-all;
-        color: @jova-grey-dark;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        &:hover,
-        &:active{
-          color: @jova-blue;
-        }
       }
       &.active{
         &:after{
@@ -1003,14 +993,47 @@ p{
         }
         .title{
           color: @jova-grey-darker;
+          &:after{
+            .transition-all;
+            .fontawesome;
+            content: '\f068';
+            font-size: 12px;
+            line-height: 24px;
+          }
         }
       }
-      &:hover,
-      &:active{
-        .title{
-          color: @jova-blue-darker;
+      .title{
+        .transition-all;
+        padding-right: 24px;
+        padding-left: 24px;
+        color: @jova-grey;
+        font-family: @raleway;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        &:hover,
+        &:active{
           color: @jova-blue;
+          &:after{
+            color: @jova-blue;
+          }
         }
+        &:after{
+          .transition-all;
+          .fontawesome;
+          content: '\f067';
+          float: right;
+          color: lighten(@jova-grey, 10%);
+          font-size: 12px;
+          line-height: 24px;
+        }
+      }
+      .answer{
+        padding-top: 24px;
+        padding-right: 100px;
+        padding-bottom: 36px;
+        padding-left: 24px;
+        background: lighten(@light-grey, 3%) !important;
       }
     }
   }
@@ -1100,7 +1123,10 @@ p{
 //
 // INSURANCE PAGE
 .insurance-content{
-
+  p{
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 //
