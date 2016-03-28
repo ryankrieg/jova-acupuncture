@@ -127,11 +127,11 @@ p{
   color: @jova-grey;
   a,
   a:visited{
-    color: @jova-blue-darker;
+    color: @jova-blue;
   }
   a:hover,
   a:active{
-    color: @jova-blue;
+    color: @jova-blue-darker;
   }
 }
 
@@ -980,7 +980,40 @@ p{
 //
 // FAQ PAGE
 .jova-faqs{
-
+  .faq{
+    .question{
+      background: @light-grey !important;
+      &:after{
+        display: none !important;
+      }
+      .title{
+        .transition-all;
+        color: @jova-grey-dark;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        &:hover,
+        &:active{
+          color: @jova-blue;
+        }
+      }
+      &.active{
+        &:after{
+          display: none !important;
+        }
+        .title{
+          color: @jova-grey-darker;
+        }
+      }
+      &:hover,
+      &:active{
+        .title{
+          color: @jova-blue-darker;
+          color: @jova-blue;
+        }
+      }
+    }
+  }
 }
 .faq-form{
   h3{
