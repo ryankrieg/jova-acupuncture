@@ -927,7 +927,49 @@ p{
 //
 // PRACTICE (OUR HEALING SPACE) PAGE
 .practice-intro{
-
+  p{
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.practice-info{
+  .practice-parking{
+    p{
+      margin-top: 20px;
+      color: lighten(@jova-grey, 10%);
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .practice-contact{
+    p{
+      margin-bottom: 6px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .icon-phone{
+        &:before{
+          .fontawesome;
+          content: '\f095';
+          margin: 0 6px 0 0;
+          color: @jova-blue;
+        }
+      }
+      .icon-mail{
+        &:before{
+          .fontawesome;
+          content: '\f0e0';
+          margin: 0 6px 0 0;
+          color: @jova-blue;
+        }
+      }
+    }
+  }
+  .practice-hours{
+    p{
+      line-height: 24px;
+    }
+  }
 }
 
 
@@ -941,6 +983,9 @@ p{
 // NEW CLIENT FORMS PAGE
 .newclientforms-content{
 
+  .download-button{
+
+  }
 }
 
 //
@@ -1282,6 +1327,7 @@ p{
       right: 80px;
     }
   }
+
 
   // Footer
   #Footer{
