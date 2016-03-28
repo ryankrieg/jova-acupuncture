@@ -856,6 +856,72 @@ p{
   .wpb_single_image{
     margin: 20px 0px;
   }
+  p{
+    img{
+      margin-top: 0 !important;
+    }
+  }
+}
+
+//
+// SERVICES PAGE
+.services-intro{
+
+}
+.services-section{
+
+}
+.jova-pricing{
+  .pricing-header{
+    h4{
+      margin-bottom: 0px;
+      color: @white;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    h5{
+      color: @white;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+  }
+  .pricing-info{
+    a,
+    a:visited{
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+      left: 0;
+
+      width: 150px;
+      height: 42px;
+
+      margin: auto;
+      padding: 0 !important;
+
+      color: @jova-grey;
+      font-family: @raleway;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 42px;
+
+      background-color: @white-gold;
+      -moz-border: 1px solid @gold !important;
+      -webkit-border: 1px solid @gold !important;
+      border: 1px solid @gold !important;
+      -moz-border-radius: 21px;
+      -webkit-border-radius: 21px;
+      border-radius: 21px;
+      &:hover,
+      &:active{
+        .transition-all;
+        color: @jova-grey-darker;
+        background-color: darken(@white-gold, 1%);
+        border-color: darken(@gold, 10%) !important;
+      }
+    }
+  }
 }
 
 
@@ -1400,6 +1466,12 @@ p{
   .about-content{
     .vc_column-inner{
       padding: 0 !important;
+    }
+    p{
+      img{
+        width: 100%;
+        margin: 0 0 20px 0 !important;
+      }
     }
   }
 
