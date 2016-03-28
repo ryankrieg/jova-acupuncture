@@ -1339,7 +1339,7 @@ p{
     .top_bar_right a{
       span{
         &:not(.description){
-          padding: 0 30px;
+          padding: 0 24px;
         }
       }
     }
@@ -1384,6 +1384,16 @@ p{
     }
   }
 
+
+  // Location Block (HOME)
+  .homepage-location{
+    .jova-contact-box{
+      top: 120px;
+      right: 10px;
+      left: auto;
+    }
+  }
+
   //
   // SERVICES PAGE
   .services-section{
@@ -1392,12 +1402,23 @@ p{
     position: relative;
   }
 
-  // Location Block (HOME)
-  .homepage-location{
-    .jova-contact-box{
-      top: 120px;
-      right: 10px;
-      left: auto;
+  //
+  // PRACTICE (OUR HEALING SPACE) PAGE
+  .practice-info{
+    .practice-contact{
+      p{
+        .icon-phone{
+          display: inline;
+        }
+        .icon-mail{
+          display: inline;
+        }
+      }
+    }
+    .practice-hours{
+      p{
+        line-height: 24px;
+      }
     }
   }
 
