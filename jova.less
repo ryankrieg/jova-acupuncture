@@ -1043,17 +1043,26 @@ p{
     margin-bottom: 50px !important;
     color: @white;
   }
+  .wpb_wrapper .wpcf7-form{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
   form{
     p{
       color: @white;
       &:nth-child(2){
         float: left;
+        width: ~"calc( 50% - 12px )";
         margin-right: 24px;
       }
       &:nth-child(3){
         float: right;
+        width: ~"calc( 50% - 12px )";
       }
       &:nth-child(5){
+        width: 100%;
         margin: 0;
         text-align: center;
       }
@@ -1405,21 +1414,7 @@ p{
   //
   // PRACTICE (OUR HEALING SPACE) PAGE
   .practice-info{
-    .practice-contact{
-      p{
-        .icon-phone{
-          display: inline;
-        }
-        .icon-mail{
-          display: inline;
-        }
-      }
-    }
-    .practice-hours{
-      p{
-        line-height: 24px;
-      }
-    }
+
   }
 
   // Footer
