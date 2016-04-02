@@ -1741,21 +1741,26 @@ p{
   }
 
   // Action Bar = address, phone, email, socials
+  .header-classic #Action_bar .contact_details, .header-stack #Action_bar .contact_details{
+    padding-left: 0px;
+  }
   #Action_bar{
     .contact_details{
-      padding: 24px 0 0 0;
+      padding: 12px 0 0 0;
       line-height: 18px;
       // Show Address (slogan)
       li{
         display: block;
-        margin: 0 0 12px 0;
+        margin: 0 0 2px 0;
         &.slogan{
           display: inline-block;
+          height: 17px;
+          overflow: hidden;
         }
       }
     }
     .social{
-      margin-bottom: 18px;
+      margin: 4px 0 6px 0;
     }
   }
 
@@ -1765,9 +1770,10 @@ p{
       margin-top: 0;
     }
     .logo{
-      margin: 0;
+      margin: 6px auto;
       #logo{
-        margin: 24px 0;
+        margin: 0 auto;
+        width: 240px;
         img{
           height: auto !important;
         }
@@ -1785,7 +1791,7 @@ p{
   // Menu Styles
   #Top_bar{
     #menu{
-      padding-bottom: 24px;
+      padding-bottom: 12px;
       ul li{
         background-color: @light-grey;
         text-align: center;
@@ -1867,12 +1873,14 @@ p{
 
   // Book Appointment Button
   #Top_bar #menu-item-31{
-    margin-top: 20px !important;
+    margin-top: 8px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
     background-color: transparent !important;
     a{
       display: block !important;
       span{
-        padding: 16px 36px !important;
+        padding: 12px 36px !important;
         line-height: 60px !important;
         -moz-border: 1px solid @gold !important;
         -webkit-border: 1px solid @gold !important;
