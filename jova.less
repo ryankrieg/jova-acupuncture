@@ -751,7 +751,8 @@ p{
 
 // Sub-page Icon Blocks
 .sub-page-blocks{
-
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .style-simple .icon_box .subpage-links{
   .desc_wrapper h4{
@@ -830,15 +831,17 @@ p{
     margin: 0 auto;
     color: @white;
     font-family: @raleway;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
   }
 }
 .about-content{
+  padding-top: 24px;
+  padding-bottom: 48px;
   h3{
-    margin-top: 40px !important;
-    margin-bottom: 24px !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
   }
   .wpb_single_image{
     margin: 20px 0px;
@@ -1272,6 +1275,12 @@ p{
     }
   }
 
+  // Sub-page Icon Blocks
+  .sub-page-blocks{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
   // Location Block (HOME)
   .homepage-location{
     .jova-contact-box{
@@ -1287,6 +1296,14 @@ p{
     p{
       font-size: 30px;
       line-height: 46px;
+    }
+  }
+  .about-content{
+    padding-top: 60px;
+    padding-bottom: 150px;
+    h3{
+      margin-top: 40px !important;
+      margin-bottom: 24px !important;
     }
   }
 
@@ -1534,7 +1551,7 @@ p{
   .container,
   .four.columns .widget-area{
     max-width: 90%;
-    max-width: ~"calc(100% - 48px)" !important;
+    max-width: ~"calc(100% - 24px)" !important;
   }
 
   // Action Bar = address, phone, email, socials
@@ -1714,11 +1731,15 @@ p{
   //
   // ABOUT PAGE
   .about-intro{
-
+    padding-right: 24px !important;
+    padding-left: 24px !important;
   }
   .about-content{
     .vc_column-inner{
       padding: 0 !important;
+    }
+    h3{
+      //text-align: center;
     }
     p{
       img{
