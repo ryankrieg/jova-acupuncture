@@ -927,12 +927,16 @@ p{
 //
 // PRACTICE (OUR HEALING SPACE) PAGE
 .practice-intro{
+  padding-top: 24px;
+  padding-bottom: 24px;
   p{
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 .practice-info{
+  padding-top: 24px;
+  padding-bottom: 24px;
   .practice-parking{
     p{
       margin-top: 20px;
@@ -947,18 +951,15 @@ p{
       &:last-child{
         margin-bottom: 0;
       }
-      .icon-phone{
+      .fa-phone{
         &:before{
-          .fontawesome;
-          content: '\f095';
           margin: 0 6px 0 0;
           color: @jova-blue;
+          font-size: 22px;
         }
       }
-      .icon-mail{
+      .fa-envelope{
         &:before{
-          .fontawesome;
-          content: '\f0e0';
           margin: 0 6px 0 0;
           color: @jova-blue;
         }
@@ -1339,6 +1340,21 @@ p{
     }
   }
 
+  // About
+  .about-intro{
+    p{
+      font-size: 30px;
+      line-height: 46px;
+    }
+  }
+  .about-content{
+    padding-top: 60px;
+    padding-bottom: 150px;
+    h3{
+      margin-bottom: 24px !important;
+    }
+  }
+
   // Sub-page Icon Blocks
   .sub-page-blocks{
     padding-top: 90px;
@@ -1359,7 +1375,6 @@ p{
   .services-intro{
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
   .services-section{
     .service-info{
@@ -1382,19 +1397,18 @@ p{
   }
 
   //
-  // ABOUT PAGE
-  .about-intro{
+  // PRACTICE (OUR HEALING SPACE) PAGE
+  .practice-intro{
+    padding-top: 50px;
+    padding-bottom: 50px;
     p{
-      font-size: 30px;
-      line-height: 46px;
+      font-size: 24px;
+      line-height: 36px;
     }
   }
-  .about-content{
-    padding-top: 60px;
-    padding-bottom: 150px;
-    h3{
-      margin-bottom: 24px !important;
-    }
+  .practice-info{
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   //
@@ -1983,6 +1997,21 @@ p{
     }
     .pricing-info{
       text-align: center;
+    }
+  }
+
+  //
+  // PRACTICE (OUR HEALING SPACE) PAGE
+  .practice-intro{
+    .wpb_single_image .vc_single_image-wrapper{
+      margin-bottom: 12px;
+    }
+  }
+  .practice-map{
+    height: 250px;
+    overflow: hidden;
+    .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom{
+      bottom: 210px !important;
     }
   }
 
