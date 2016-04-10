@@ -658,6 +658,60 @@ p{
 //
 // Homepage
 
+// Promo section
+.jova-promo{
+  margin: 24px auto 0 auto;
+  padding: 24px 12px 14px 12px;
+  background: rgba(255,255,255,0.9);
+  .wpb_single_image.vc_align_left{
+    float: left;
+  }
+  .wpb_single_image{
+    display: none;
+    img{
+      width: 80px;
+      margin: -10px 10px 0 0;
+    }
+  }
+  h3{
+    margin-bottom: 0;
+    color: @dark-blue;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  h4{
+    color: @dark-blue;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .promo-text{
+    float: left;
+  }
+  .promo-button{
+    float: right;
+    a,
+    a:visited{
+      .transition-all;
+      display: block;
+      padding: 0 32px;
+      background: @jova-blue;
+      color: white;
+      font-family: @raleway;
+      font-size: 20px;
+      line-height: 60px;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
+    }
+    a:hover,
+    a:active{
+      background: @jova-blue-dark;
+    }
+  }
+}
+
 // About (homepage)
 .about-jova{
   .vc_column-inner{
@@ -1327,6 +1381,16 @@ p{
     }
   }
 
+  // Promo section
+  .jova-promo{
+    -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    .wpb_single_image{
+      display: block;
+    }
+  }
+
   // Services
   .services{
     .vc_column-inner{
@@ -1585,6 +1649,13 @@ p{
     }
   }
 
+  // Promo section
+  .jova-promo{
+    width: 980px;
+    height: 140px;
+    margin: 60px auto 0 auto;
+    padding: 10px 100px 0 100px;
+  }
 
   // Location Block (HOME)
   .homepage-location{
@@ -1920,6 +1991,21 @@ p{
   .sub-page-blocks.vc_custom_1459062379240{
     padding-top: 35px !important;
     padding-bottom: 35px !important;
+  }
+
+  // Promo section
+  .jova-promo{
+    h3, h4, a{
+      text-align: center;
+      float: none;
+    }
+    .promo-text{
+      float: none;
+      margin-bottom: 12px;
+    }
+    .promo-button{
+      float: none;
+    }
   }
 
   //
