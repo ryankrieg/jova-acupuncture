@@ -1281,6 +1281,10 @@ p{
   }
 
   // Headers
+  body:not(.template-slider) #Header{
+    min-height: 226px;
+  }
+
   #jova-header{
     padding: 130px 0;
     h2{
@@ -1315,7 +1319,6 @@ p{
     }
     //Practice
     .practice-header{
-      background-image: none;
       z-index: 1;
       position: relative;
       h2{
@@ -1324,7 +1327,10 @@ p{
     }
     .our-healing-space-header-slider{
       position: absolute;
-      top: -200px;
+      top: -150px;
+      h2{
+        line-height: 0 !important;
+      }
     }
     //FAQ
     .faq-header{
@@ -1475,6 +1481,9 @@ p{
   //
   // PRACTICE (OUR HEALING SPACE) PAGE
   .page-id-228{
+    #jova-header{
+      background: none !important;
+    }
     .our-healing-space-header-slider{
       display: block;
     }
