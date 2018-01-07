@@ -2217,6 +2217,61 @@ p{
 
 }
 
+// Contact Form
+#ctct-form-3674 {
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  label {
+    display: none;
+  }
+  abbr {
+    display: none;
+  }
+  input {
+    width: 100%;
+  }
+  .ctct-disclosure {
+    display: none;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+    display: inline-block;
+    font-family: @raleway;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    padding: 0 50px !important;
+    color: @white;
+    line-height: 60px;
+    background-color: @gold;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    &:hover,
+    &:active{
+      .transition-all;
+      color: @white;
+      background-color: darken(@gold, 5%);
+    }
+  }
+
+  input[type="text"], input[type="email"] {
+    background-image: none !important;
+    margin: 0 auto;
+    max-width: 380px;
+    background-color: white !important;
+    box-shadow: none !important;
+    padding-left: 10px;
+    &:focus {
+      background-color: white !important;
+      border-color: transparent;
+      color: black;
+    }
+  }
+
+}
+
 //
 //
 //
